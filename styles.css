@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f4f0;
+}
+
+/* Encabezado con logo y menú */
+header {
+    background-color: #562d27;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f0b27a;
+}
+
+/* Banner de bienvenida con superposición */
+#bienvenida {
+    position: relative;
+    background-image: url('banner\ de\ chocodelicias.webp'); /* Reemplaza con tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+/* Superposición oscura */
+#bienvenida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de transparencia según sea necesario */
+    z-index: 1;
+}
+
+/* Contenido del banner */
+.banner-content {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté encima de la superposición */
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.boton {
+    padding: 0.8rem 2rem;
+    background-color: #f0b27a;
+    color: #562d27;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #c97a45;
+}
+/* Ajuste del tamaño de las imágenes en productos */
+.producto img {
+    width: 180px; /* Ajusta el ancho de la imagen */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el botón de compra */
+.boton-compra {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f0b27a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-compra:hover {
+    background-color: #c97a45;
+}
+

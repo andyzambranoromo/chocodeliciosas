@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado (compartido) -->
+    <header>
+        <h1>Bienvenido a Mi Sitio Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="blogPosts"></div> <!-- Aquí se mostrarán las publicaciones -->
+
+        <!-- Formulario para agregar/editar una entrada de blog -->
+        <h3>Agregar o Editar Entrada</h3>
+        <form id="blogForm">
+            <input type="hidden" id="postId" value="">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Contenido:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página (compartido) -->
+    <footer>
+        <p>© 2024 Andy. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para manejar el blog -->
+    <script src="blog.js"></script>
+</body>
+</html>
